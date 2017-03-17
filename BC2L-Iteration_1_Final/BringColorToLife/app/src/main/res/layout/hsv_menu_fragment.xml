@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:id="@+id/menuButtonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        >
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/hsvResetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:fabSize="mini"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_reset_button"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/hsvMenuBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_back_button"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@id/menuButtonsLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        >
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/hueSlider"
+            android:layout_margin="15dp"
+            android:progress="50" />
+
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/saturationSlider"
+            android:layout_margin="15dp"
+            android:progress="50" />
+
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/vibranceSilder"
+            android:layout_margin="15dp"
+            android:progress="50" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

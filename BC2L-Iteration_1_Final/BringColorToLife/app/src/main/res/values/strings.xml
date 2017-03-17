@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BC2L</string>
+    <string name="preferencesMenu">Preferences</string>
+    <string name="addFilterMenu">Save Filter</string>
+    <string name="hsvMenu">HSV</string>
+    <string name="yourFiltersMenu">Your Filters</string>
+    <string name="cvdMenu">Colorblind Filters</string>
+    <string name="nextPage">Next</string>
+    <string name="prevPage">Previous</string>
+    <string name="deleteCustom">Delete</string>
+    <string name="cvd1text">CVD 1</string>
+    <string name="cvd2text">CVD 2</string>
+</resources>

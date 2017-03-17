@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="customFilter1" type="id"/>
+    <item name="customFilter2" type="id"/>
+    <item name="customFilter3" type="id"/>
+    <item name="customFilter4" type="id"/>
+    <item name="customFilter5" type="id"/>
+    <item name="customFilter6" type="id"/>
+    <item name="customFilter7" type="id"/>
+    <item name="customFilter8" type="id"/>
+    <item name="customFilter9" type="id"/>
+
+    <item name="customFilter1Holder" type="id"/>
+    <item name="customFilter2Holder" type="id"/>
+    <item name="customFilter3Holder" type="id"/>
+    <item name="customFilter4Holder" type="id"/>
+    <item name="customFilter5Holder" type="id"/>
+    <item name="customFilter6Holder" type="id"/>
+    <item name="customFilter7Holder" type="id"/>
+    <item name="customFilter8Holder" type="id"/>
+    <item name="customFilter9Holder" type="id"/>
+
+    <item name="customFilter1Text" type="id"/>
+    <item name="customFilter2Text" type="id"/>
+    <item name="customFilter3Text" type="id"/>
+    <item name="customFilter4Text" type="id"/>
+    <item name="customFilter5Text" type="id"/>
+    <item name="customFilter6Text" type="id"/>
+    <item name="customFilter7Text" type="id"/>
+    <item name="customFilter8Text" type="id"/>
+    <item name="customFilter9Text" type="id"/>
+
+</resources>

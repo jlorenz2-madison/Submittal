@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:id="@+id/yourFilterMenu"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:id="@+id/DeleteCustomButtonHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            >
+
+            <TextView
+                android:id="@+id/deleteCustomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/deleteCustom"
+                android:background="@drawable/text_background"
+                android:textColor="@color/text"
+                android:minHeight="20dp"
+                android:minWidth="50dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/deleteCustomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_deletecustom_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/NextPageMenuHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/DeleteCustomButtonHolder"
+            >
+
+            <TextView
+                android:id="@+id/nextPageMenuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nextPage"
+                android:background="@drawable/text_background"
+                android:textColor="@color/text"
+                android:minHeight="20dp"
+                android:minWidth="45dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/nextYFMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_next_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/prevPageMenuHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/NextPageMenuHolder">
+
+            <TextView
+                android:id="@+id/prevPageMenuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prevPage"
+                android:background="@drawable/text_background"
+                android:textColor="@color/text"
+                android:minHeight="20dp"
+                android:minWidth="70dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/prevYFMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_prev_button"
+                />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/yFBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:fabSize="normal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/prevPageMenuHolder"
+            app:srcCompat="@drawable/ic_back_button"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

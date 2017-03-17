@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:id="@+id/mainMenu"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <LinearLayout
+            android:id="@+id/PreferencesHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            >
+
+            <TextView
+                android:id="@+id/prefMenuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preferencesMenu"
+                android:background="@drawable/text_background"
+                android:textColor="@color/text"
+                android:minHeight="20dp"
+                android:minWidth="85dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/mainMenuPreferencesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:fabSize="mini"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_pref_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/AddFilterHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/PreferencesHolder"
+            >
+
+            <TextView
+                android:id="@+id/addFilterMenuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addFilterMenu"
+                android:background="@drawable/text_background"
+                android:textColor="@color/text"
+                android:minHeight="20dp"
+                android:minWidth="75dp"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/mainMenuAddFilterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:fabSize="mini"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_addfilter_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainMenuHSVHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/AddFilterHolder"
+            >
+
+            <TextView
+                android:id="@+id/hsvMenuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hsvMenu"
+                android:background="@drawable/text_background"
+                android:textColor="@color/text"
+                android:minHeight="20dp"
+                android:minWidth="37dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/mainMenuHSVButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_hsv_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainMenuYFHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/mainMenuHSVHolder"
+            >
+
+            <TextView
+                android:id="@+id/yourFiltersMenuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yourFiltersMenu"
+                android:background="@drawable/text_background"
+                android:textColor="@color/text"
+                android:minHeight="20dp"
+                android:minWidth="80dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/mainMenuYFButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:fabSize="mini"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_yourfilter_button"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mainMenuCVDHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/mainMenuYFHolder">
+
+            <TextView
+                android:id="@+id/cvdMenuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cvdMenu"
+                android:background="@drawable/text_background"
+                android:textColor="@color/text"
+                android:minHeight="20dp"
+                android:minWidth="115dp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/mainMenuCVDButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:fabSize="mini"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_cvd_button"
+                />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+                android:id="@+id/mainMenuBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:fabSize="normal"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/mainMenuCVDHolder"
+                app:srcCompat="@drawable/ic_back_button"
+                />
+
+    </RelativeLayout>
+
+</RelativeLayout>

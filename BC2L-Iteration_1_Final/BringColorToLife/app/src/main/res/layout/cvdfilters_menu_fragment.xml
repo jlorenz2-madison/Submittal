@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:id="@+id/mainMenu"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <LinearLayout
+            android:id="@+id/CVD2Holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            >
+
+            <TextView
+                android:id="@+id/cvd2MenuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cvd2text"
+                android:background="@drawable/text_background"
+                android:textColor="@color/text"
+                android:minHeight="20dp"
+                android:minWidth="45dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/cvd2MenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:fabSize="mini"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CVD1Holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/CVD2Holder"
+            >
+
+            <TextView
+                android:id="@+id/cvd1MenuText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cvd1text"
+                android:background="@drawable/text_background"
+                android:textColor="@color/text"
+                android:minHeight="20dp"
+                android:minWidth="45dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/cvd1MenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:fabSize="mini"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/cvdMenuBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            app:fabSize="normal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/CVD1Holder"
+            app:srcCompat="@drawable/ic_back_button"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
