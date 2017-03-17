@@ -11,6 +11,14 @@
 	6a) Select Nexus 6p click next.
 	6b) Download Nougat API 25
 7) Run
+8) To view the camera feed through emulator, do the following:
+	- Press emulator's home button
+	- Navigate to the settings
+	- Go to Apps
+	- Go to BC2L
+	- Click 'Permissions'
+	- Indicate that you would like to give the camera permissions
+	- Navigate back to BC2L Application
 
 
 
